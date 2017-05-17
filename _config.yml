@@ -9,7 +9,7 @@ name: AClang
 description: Heterogeneous Computing Made Easy!
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://github.com/omp2ocl/aclang/blob/master/images/aclang-logo.png
+avatar: https://raw.githubusercontent.com/omp2ocl/aclang/master/images/aclang-logo.png
 
 #
 # Flags below are optional
