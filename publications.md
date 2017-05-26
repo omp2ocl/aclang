@@ -15,7 +15,7 @@ If you use or somehow benefit from AClang in your research, please cite the foll
 {% highlight TeX %}
 @inproceedings{MPereira2017,
 author={Marcio M Pereira, Rafael C F Souza and Guido Araujo},
-booktitle={13th International Wokshop on OpenMP (IWOMP 2017)},
+booktitle={13th International Workshop on OpenMP (IWOMP 2017)},
 title={Compiling and Optimizing OpenMP 4.X Programs to OpenCL and SPIR},
 year={2017},
 month={Sept 21-22},}
