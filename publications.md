@@ -19,9 +19,7 @@ booktitle={13th International Workshop on OpenMP (IWOMP 2017)},
 title={Compiling and Optimizing OpenMP 4.X Programs to OpenCL and SPIR},
 year={2017},
 month={Sept 21-22},}
-{% endhighlight %}
 
-{% highlight TeX %}
 @inproceedings{Rafael2017,
 author={Rafael Sousa, Marcio Pereira, Fernando Pereira and Guido Araujo},
 booktitle={29th {IEEE} International Symposium On Computer Architecture And High
