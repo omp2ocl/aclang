@@ -29,7 +29,7 @@ Performance Computing (SBAC-PAD) 2017 Campinas, Brazil},
 title={Data Coherence Analysis and Optimization for Heterogenous Computing},
 year={2017},
 month={October 17-20},}
-% endhighlight %}
+{% endhighlight %}
 
 
 And let us know about your work: we are happy to add your paper to this page.
