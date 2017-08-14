@@ -28,7 +28,7 @@ computational power exploring their target devices.
 The following example shows how ACLang works from a programmer
 perspective. It presents two loops from the “Matrix Vector Product and
 Transpose” (mvt) program of the Polybench benchmark suite after they
-have been annotated with OpenMP 4.0 pragmas: 
+have been annotated with OpenMP 4.0 pragmas:
 
 {% highlight C %}
 // Problem size
@@ -38,19 +38,19 @@ void mvt_gpu(float* a, float* x1, float* x2,
                        float* y1, float* y2)
 {
   int i,j;
-  
-  #pragma omp target data device(GPU) map(to: a[:N*N])
+
+  #pragma omp target data device(GPU) map(to: a[ :N*N])
   {
     #pragma omp target map(to: y1[:N]) map(tofrom: x1[:N])
     #pragma omp parallel for simd
-    for (i=0; i<N; i++) 
-      for (j=0; j<N; j++) 
+    for (i=0; i<N; i++)
+      for (j=0; j<N; j++)
         x1[i] = x1[i] + a[i*N + j] * y1[j];
-	
+
     #pragma omp target map(to: y2[:N]) map(tofrom: x2[:N])
     #pragma omp parallel for simd
-    for (i=0; i<N; i++) 
-      for (j=0; j<N; j++) 
+    for (i=0; i<N; i++)
+      for (j=0; j<N; j++)
         x2[i] = x2[i] + a[j*N + i] * y2[j];
   }
 }
@@ -67,7 +67,7 @@ Listing above inputs (a and y1) are mapped to the GPU, and array x1 is
 mapped to/from the GPU. This means that array x1 is read and written
 during the kernel execution in the GPU. This strategy offers maximal
 flexibility to the developer to decide which part of the code is
-profitable to run on which architecture. 
+profitable to run on which architecture.
 
 Host code to perform data offloading in ACLang is handled
 automatically during the LLVM/IR generation phase and occurs in
@@ -78,11 +78,11 @@ format. Moreover, ACLang also optimizes the extracted OpenCL
 kernels. For example as shown in Listing below it tiles and vectorizes
 the first loop of the code in example above transforming it to OpenCL
 kernel with blocks and threads suitable to run on any GPU containing
-vector instructions. 
+vector instructions.
 
 {% highlight C %}
-__kernel void mvt_gpu_0(__global float *a, 
-                        __global float *x1, 
+__kernel void mvt_gpu_0(__global float *a,
+                        __global float *x1,
                         __global float *y1) {
   int b0 = get_group_id(0);
   int t0 = get_local_id(0);
@@ -100,7 +100,7 @@ __kernel void mvt_gpu_0(__global float *a,
 {% endhighlight %}
 
 You can look at [Unibench](https://github.com/omp2ocl/Unibench)
-repository if you want to see more examples. 
+repository if you want to see more examples.
 
 
 ## Documentation, Installation, Configuration

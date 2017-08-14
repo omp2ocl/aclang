@@ -19,15 +19,11 @@ booktitle={13th International Workshop on OpenMP (IWOMP 2017)},
 title={Compiling and Optimizing OpenMP 4.X Programs to OpenCL and SPIR},
 year={2017},
 month={Sept 21-22},}
-
-@inproceedings{Rafael2017,
-author={Rafael Sousa, Marcio Pereira, Fernando Pereira and Guido Araujo},
-booktitle={29th {IEEE} International Symposium On Computer Architecture And High
-Performance Computing (SBAC-PAD) 2017 Campinas, Brazil},
-title={Data Coherence Analysis and Optimization for Heterogenous Computing},
-year={2017},
-month={October 17-20},}
 {% endhighlight %}
 
+  - Rafael Sousa, Marcio Pereira, Fernando Pereira and Guido Araujo},
+    "Data Coherence Analysis and Optimization for Heterogenous Computing"
+    in 29th International Symposium On Computer Architecture And High
+    Performance Computing (SBAC-PAD 2017)
 
 And let us know about your work: we are happy to add your paper to this page.
