@@ -59,11 +59,11 @@ void mvt_gpu(float* a, float* x1, float* x2,
 In the first loop the program computes the matrix vector
 multiplication followed by the transpose between a and y1 storing the
 result into vector x1. The second loop does a similar task for a, y2
-and x2. As shown in Listing 1.1, the target clause defines the portion
+and x2. As shown in Listing above, the target clause defines the portion
 of the program that will be executed by the device (GPU in the
-example). The map clause details the mapping of the data be- tween the
+example). The map clause details the mapping of the data between the
 host and the target device. For example in the first kernel of
-Listing 1.1 inputs (a and y1) are mapped to the GPU, and array x1 is
+Listing above inputs (a and y1) are mapped to the GPU, and array x1 is
 mapped to/from the GPU. This means that array x1 is read and written
 during the kernel execution in the GPU. This strategy offers maximal
 flexibility to the developer to decide which part of the code is
