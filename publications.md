@@ -21,9 +21,13 @@ year={2017},
 month={Sept 21-22},}
 {% endhighlight %}
 
-  - Rafael Sousa, Marcio Pereira, Fernando Pereira and Guido Araujo},
+  - Rafael Sousa, Marcio Pereira, Fernando Pereira and Guido Araujo,
     "Data Coherence Analysis and Optimization for Heterogenous Computing"
     in 29th International Symposium On Computer Architecture And High
     Performance Computing (SBAC-PAD 2017)
+
+  - Maicol Zegarra, Marcio Pereira, Xavier Martorell and Guido Araujo,
+    "Automatic Scan Parallelization in OpenMP"
+    in 6th Workshop on Parallel Programming Models (MPP 2017)
 
 And let us know about your work: we are happy to add your paper to this page.
